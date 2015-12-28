@@ -4,6 +4,9 @@ var http = require('http')
 var port = Number(process.argv[2])
 
 server = http.createServer(function (req, res) {
+  if (req.method != 'POST')
+    return res.end('POST required\n')
+    
   req.pipe(map(function (chunk) {
     return chunk.toString().toUpperCase();
   })).pipe(res);
