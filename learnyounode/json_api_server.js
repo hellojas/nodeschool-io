@@ -13,6 +13,7 @@ var server = http.createServer(function(req, res) {
   if (url_parse['pathname'] == "/api/parsetime") {
 
     var date = new Date(url_parse['query'].split("=")[1]);
+    console.log("test" + url_parse['query']['iso'])
     console.log(url_parse['query'].split("T")[1]);
     result = JSON.stringify({
       "hour": date.getHours(),

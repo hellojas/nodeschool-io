@@ -1,0 +1,16 @@
+{
+  "name": "@hellojas/how-to-npm",
+  "version": "1.0.1",
+  "description": "how-to-npm lesson",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "hellojas",
+  "license": "ISC",
+  "dependencies": {},
+  "repository": "www.jasminehsu.net"
+}
